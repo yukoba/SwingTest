@@ -20,10 +20,10 @@ class Main {
     final DefaultTreeModel treeModel = new DefaultTreeModel(rootNode)
 
     Main() {
-        mainForm.incrementButton.addActionListener { ActionEvent evt -> onIncrementButton() }
+        mainForm.incrementButton.addActionListener { onIncrementButton() }
 
         mainForm.numberTree.model = treeModel
-        mainForm.numberTree.addTreeSelectionListener { TreeSelectionEvent evt -> onTreeClick(evt) }
+        mainForm.numberTree.addTreeSelectionListener { onTreeClick(it) }
 
         countUpdated()
         createFrame()
