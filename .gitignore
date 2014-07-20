@@ -1,0 +1,14 @@
+.idea/workspace.xml
+.idea/dictionaries/
+Thumbs.db
+classes/
+resource/
+tmp/
+temp/
+out/
+*.iws
+*.aux
+*.dvi
+*.log
+*.pdf
+*.gz
