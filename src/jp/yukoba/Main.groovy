@@ -9,6 +9,8 @@ import javax.swing.tree.DefaultMutableTreeNode
 import javax.swing.tree.DefaultTreeModel
 import java.awt.event.ActionEvent
 
+import static javax.swing.SwingUtilities.invokeAndWait
+
 @TypeChecked
 class Main {
     String count = "0"
@@ -56,6 +58,8 @@ class Main {
 
     static void main(String[] args) {
         UIManager.setLookAndFeel(UIManager.systemLookAndFeelClassName)
-        new Main()
+        invokeAndWait {
+            new Main()
+        }
     }
 }
