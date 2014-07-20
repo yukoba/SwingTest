@@ -24,14 +24,12 @@ class Main {
         mainForm.numberTree.addTreeSelectionListener { TreeSelectionEvent evt -> onTreeClick(evt) }
 
         countUpdated()
-
         createFrame()
     }
 
     void onIncrementButton() {
         count = mainForm.countTF.text
         count = ((count as int) + 1) as String
-
         countUpdated()
 
         treeModel.insertNodeInto(new DefaultMutableTreeNode(count), rootNode, rootNode.childCount)
