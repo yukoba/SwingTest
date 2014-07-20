@@ -52,6 +52,7 @@ class Main {
         frame.contentPane = mainForm.mainPanel
         frame.defaultCloseOperation = JFrame.EXIT_ON_CLOSE
         frame.pack()
+        frame.locationByPlatform = true
         frame.visible = true
     }
 
